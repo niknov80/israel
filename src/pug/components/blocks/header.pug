@@ -1,0 +1,10 @@
+header
+  .container
+    nav.site-nav
+      ul.site-nav__list
+        li.site-nav__item
+          a.site-nav__link(href=page === "index" ? false : "index.html") Главная
+        li.site-nav__item
+          a.site-nav__link(class=page ==="catalog" ? "site-nav__link--active": false href=page === "catalog" ? false : "catalog.html") Каталог
+        li.site-nav__item
+          a.site-nav__link(class=page ==="contacts" ? "site-nav__link--active": false href=page === "contacts" ? false : "contacts.html") Контакты
