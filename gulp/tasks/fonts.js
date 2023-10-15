@@ -1,4 +1,4 @@
-import fonter from "gulp-fonter";
+import fonter from 'gulp-fonter';
 import ttf2woff from 'gulp-ttf2woff';
 import ttf2woff2 from 'gulp-ttf2woff2';
 
@@ -7,7 +7,7 @@ export const otfToTtf = () => {
   return app.gulp.src(`${app.path.srcFolder}/fonts/*.otf`, {})
     .pipe(app.plugins.plumber(
       app.plugins.notify.onError({
-        title: "FONTS",
+        title: "FONTS TTF",
         message: "Error: <%= error.message %>"
       })
     ))
@@ -22,7 +22,7 @@ export const otfToTtf = () => {
 export const ttfToWoff = () => app.gulp.src(app.path.src.ttf)
   .pipe(app.plugins.plumber(
     app.plugins.notify.onError({
-      title: 'FONTS',
+      title: 'FONTS WOFF',
       message: 'Error: <%= error.message %>'
     })
   ))

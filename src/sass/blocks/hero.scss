@@ -1,3 +1,128 @@
-.hero__price {
-  font-size: 32px;
+.hero {
+  position: relative;
+}
+
+.hero__wrapper {
+  position: relative;
+  background-repeat: no-repeat;
+  min-height: 880px;
+  background-position-x: 50%;
+  background-size: initial;
+
+  @include vp-1023 {
+    background-size: cover;
+  }
+
+  @include vp-767 {
+    min-height: 635px;
+    background-position: 50% 70%;
+  }
+}
+
+.hero__text {
+  position: absolute;
+  left: 50%;
+  top: 18%;
+  transform: translateX(-50%);
+  z-index: 5;
+  width: 1018px;
+  height: 340px;
+
+  @include vp-1023 {
+    max-width: 95%;
+  }
+
+
+  @include vp-767 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 27%;
+    max-width: unset;
+    width: 350px;
+    height: 122px;
+  }
+}
+
+.hero__text img {
+  width: 100%;
+}
+
+.hero__image {
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 1366px;
+  height: 906px;
+
+  @include vp-767 {
+    width: 320px;
+    height: 605px;
+    bottom: 0;
+  }
+}
+
+.hero__wrapper h1 {
+  @include text-firasans-24-28-700;
+
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 540px;
+  padding-bottom: 145px;
+  z-index: 15;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: $color-default-white;
+  text-shadow: 0 1px 4px $color-shadow-text;
+  max-width: 345px;
+
+  @include vp-767 {
+    @include text-firasans-20-24-700;
+    width: 100%;
+    padding-top: 335px;
+    padding-bottom: 255px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 76px;
+    height: 132px;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    z-index: 15;
+    background-image: url("../img/common/scroll.svg");
+
+    @include vp-767 {
+      bottom: 90px;
+    }
+  }
+}
+
+.webp {
+  & .hero__wrapper {
+    background-image: url("../img/common/bg.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/common/bg@2x.webp");
+    }
+  }
+}
+
+.no-webp {
+  & .hero__wrapper {
+    background-image: url("../img/common/bg.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/common/bg@2x.png");
+    }
+  }
 }

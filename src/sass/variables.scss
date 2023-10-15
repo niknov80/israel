@@ -4,31 +4,41 @@
 // Default
 
 $color-default-white: #ffffff;
-$color-default-black: #000000;
+$color-default-black: #484848;
+$color-default-black-20: rgba(72, 72, 72, 0.2);
+$color-default-black-50: rgba(72, 72, 72, 0.5);
 $color-transparent: rgba(255, 255, 255, 0);
+$color-gradient: linear-gradient(108deg, #ffc341 20.46%, #ffd701 65.31%);
+$color-yellow: #ffc341;
+$color-lightblue: #1fc0fc;
+$color-black: #000000;
+
 
 // Text
 
-$color-text-base:                #102654;
-$color-text-white:               #ffffff;
+$color-text-base:                $color-default-black;
+$color-text-white:               $color-default-white;
+
 $color-text-white-70:            rgba(255, 255, 255, 0.7);
 $color-text-accent:              #103aae;
 $color-text-secondary:           #495a7d;
-$color-text-gradient:            linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
 
 // Button
+
+$color-button-bg-gradient: $color-gradient;
 
 $color-button-border-light: #ffffff;
 $color-button-border-dark: #102654;
 $color-button-bg-light: #ffffff;
 $color-button-bg-dark: #102654;
-$color-button-bg-gradient: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+
 
 // Background
 
 $color-bg-primary: #ffffff; // цвет заднего фона сайта
+
 $color-bg-secondary: #f8f9fc;
-$color-bg-gradient: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 313.31deg);
+$color-bg-gradient: linear-gradient(108deg, #ffc341 20.46%, #ffd701 65.31%);
 
 
 // Icon
@@ -45,20 +55,24 @@ $color-input-border: #74819c;
 
 // Shadow
 
-$color-shadow-primary: rgba(28, 51, 116, 0.2);
+$color-shadow-icon: rgba(0, 0, 0, 0.05);
+$color-shadow-text: rgba(0, 0, 0, 0.12);
+$color-shadow-bubble: rgba(0, 0, 0, 0.1);
+$color-shadow-button-click: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), #ffffff;
 
 // Typography
 // ---------------------------------
 
 // переменная используемая в html для подключения скейлинга
-$fz-default:                        16px;
+$fz-default:                        15px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-$ff-roboto:                    "RobotoCondensed", "Arial", sans-serif;
-$ff-alumnisans:                "Alumnisans", "Arial", sans-serif;
+$ff-firasans:                    "FiraSans", "Arial", sans-serif;
+$ff-montserrat:                "Montserrat", "Arial", sans-serif;
+$ff-raleway:                "Raleway", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
@@ -75,9 +89,8 @@ $trans-600:                         0.6s $tf-default;
 // ---------------------------------
 
 $vp-320:                            320px;
-$vp-375:                            375px;
 $vp-768:                            768px;
-$vp-1200:                           1200px;
+$vp-1024:                           1024px;
 
 // Retina
 // ---------------------------------

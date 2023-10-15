@@ -1,0 +1,44 @@
+.footer {
+  padding-top: 28px;
+  padding-bottom: 20px;
+
+  border-top: 1px solid $color-default-black-20;
+
+  @include vp-767 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  align-items: start;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 24px;
+  }
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__copyright p {
+  @include text-firasans-12-18-400;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: $color-default-black-50;
+}
+
+.footer__social {
+  justify-self: end;
+
+  @include vp-767 {
+    justify-self: center;
+  }
+}

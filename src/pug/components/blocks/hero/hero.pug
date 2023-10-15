@@ -1,0 +1,55 @@
+include hero-data.pug
+
+section.hero
+  .hero__wrapper
+    h1 Учёба, путешествие и&nbsp;карьера для еврейской молодёжи
+    .hero__text
+      +image({
+        devMode: hero_data.devMode,
+        mediaTablet: hero_data.mediaQueries.tablet,
+        mediaDesktop: hero_data.mediaQueries.desktop,
+        alt: hero_data.text.image.alt,
+        mobileWidth: hero_data.text.image.mobile.width,
+        mobileHeight: hero_data.text.image.mobile.height,
+        mobileSrc: hero_data.text.image.mobile.src,
+        mobileSrc2x: hero_data.text.image.mobile.src2x,
+        mobileSrcWebp: hero_data.text.image.mobile.srcWebp,
+        mobileSrc2xWebp: hero_data.text.image.mobile.src2xWebp,
+        tabletWidth: hero_data.text.image.tablet.width,
+        tabletHeight: hero_data.text.image.tablet.height,
+        tabletSrc: hero_data.text.image.tablet.src,
+        tabletSrc2x: hero_data.text.image.tablet.src2x,
+        tabletSrcWebp: hero_data.text.image.tablet.srcWebp,
+        tabletSrc2xWebp: hero_data.text.image.tablet.src2xWebp,
+        desktopWidth: hero_data.text.image.desktop.width,
+        desktopHeight: hero_data.text.image.desktop.height,
+        desktopSrc: hero_data.text.image.desktop.src,
+        desktopSrc2x: hero_data.text.image.desktop.src2x,
+        desktopSrcWebp: hero_data.text.image.desktop.srcWebp,
+        desktopSrc2xWebp: hero_data.text.image.desktop.src2xWebp
+      })
+    .hero__image
+      +image({
+        devMode: hero_data.devMode,
+        mediaTablet: hero_data.mediaQueries.tablet,
+        mediaDesktop: hero_data.mediaQueries.desktop,
+        alt: hero_data.girl.image.alt,
+        mobileWidth: hero_data.girl.image.mobile.width,
+        mobileHeight: hero_data.girl.image.mobile.height,
+        mobileSrc: hero_data.girl.image.mobile.src,
+        mobileSrc2x: hero_data.girl.image.mobile.src2x,
+        mobileSrcWebp: hero_data.girl.image.mobile.srcWebp,
+        mobileSrc2xWebp: hero_data.girl.image.mobile.src2xWebp,
+        tabletWidth: hero_data.girl.image.tablet.width,
+        tabletHeight: hero_data.girl.image.tablet.height,
+        tabletSrc: hero_data.girl.image.tablet.src,
+        tabletSrc2x: hero_data.girl.image.tablet.src2x,
+        tabletSrcWebp: hero_data.girl.image.tablet.srcWebp,
+        tabletSrc2xWebp: hero_data.girl.image.tablet.src2xWebp,
+        desktopWidth: hero_data.girl.image.desktop.width,
+        desktopHeight: hero_data.girl.image.desktop.height,
+        desktopSrc: hero_data.girl.image.desktop.src,
+        desktopSrc2x: hero_data.girl.image.desktop.src2x,
+        desktopSrcWebp: hero_data.girl.image.desktop.srcWebp,
+        desktopSrc2xWebp: hero_data.girl.image.desktop.src2xWebp
+      })

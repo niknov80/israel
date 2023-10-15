@@ -20,7 +20,7 @@ export const path = {
   src: {
     sass: `${srcFolder}/sass/style.scss`,
     pug: `${srcFolder}/pug/pages/*.pug`,
-    img: `${srcFolder}/img/**/*.{png,jpg,jpeg}`,
+    img: `${srcFolder}/img/**/*.{png,jpg,jpeg,svg}`,
     sprite: `${srcFolder}/img/sprite/**/*.svg`,
     svg: `${srcFolder}/img/svg/**/*.svg`,
     fonts: `${srcFolder}/fonts/`,

@@ -1,3 +1,47 @@
-footer
+include ../mixins/image.pug
+include ../blocks/logo/logo-footer-data.pug
+
+footer.footer
   .container
-    p.copyright FOOTER
+    .footer__wrapper
+      .footer__logo
+        a(href="index.html")
+          +image({
+            devMode: logo_footer_data.devMode,
+            mediaTablet: logo_footer_data.mediaQueries.tablet,
+            mediaDesktop: logo_footer_data.mediaQueries.desktop,
+            alt: logo_footer_data.image.alt,
+            mobileWidth: logo_footer_data.image.mobile.width,
+            mobileHeight: logo_footer_data.image.mobile.height,
+            mobileSrc: logo_footer_data.image.mobile.src,
+            mobileSrc2x: logo_footer_data.image.mobile.src2x,
+            mobileSrcWebp: logo_footer_data.image.mobile.srcWebp,
+            mobileSrc2xWebp: logo_footer_data.image.mobile.src2xWebp,
+            tabletWidth: logo_footer_data.image.tablet.width,
+            tabletHeight: logo_footer_data.image.tablet.height,
+            tabletSrc: logo_footer_data.image.tablet.src,
+            tabletSrc2x: logo_footer_data.image.tablet.src2x,
+            tabletSrcWebp: logo_footer_data.image.tablet.srcWebp,
+            tabletSrc2xWebp: logo_footer_data.image.tablet.src2xWebp,
+            desktopWidth: logo_footer_data.image.desktop.width,
+            desktopHeight: logo_footer_data.image.desktop.height,
+            desktopSrc: logo_footer_data.image.desktop.src,
+            desktopSrc2x: logo_footer_data.image.desktop.src2x,
+            desktopSrcWebp: logo_footer_data.image.desktop.srcWebp,
+            desktopSrc2xWebp: logo_footer_data.image.desktop.src2xWebp,
+          })
+      .footer__copyright
+        p Copyright someDesignCompany &copy;2019
+      ul.footer__social.social
+        li.social__item
+          a.social__link.social__link--facebook(href="#", aria-label="facebook")
+            svg
+              use(xlink:href="img/sprite.svg#sm-facebook")
+        li.social__item
+          a.social__link.social__link--twitter(href="#", aria-label="twitter")
+            svg(width="24" height="24")
+              use(xlink:href="img/sprite.svg#sm-twitter")
+        li.social__item
+          a.social__link.social__link--instagram(href="#", aria-label="instagram")
+            svg(width="24" height="24")
+              use(xlink:href="img/sprite.svg#sm-instagram")

@@ -1,8 +1,35 @@
-@mixin text-alumnisans-92-110-600 {
-  font-family: $ff-alumnisans;
-  font-size: 92px;
-  line-height: 110px;
-  font-weight: 600;
-  letter-spacing: 4.6px;
-  text-transform: uppercase;
+@mixin text-firasans-24-28-700 {
+  font-family: $ff-firasans;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+@mixin text-firasans-20-24-700 {
+  font-family: $ff-firasans;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+@mixin text-firasans-15-18-500 {
+  font-family: $ff-firasans;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+@mixin text-firasans-14-16-500 {
+  font-family: $ff-firasans;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+
+@mixin text-firasans-12-18-400 {
+  font-family: $ff-firasans;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
 }

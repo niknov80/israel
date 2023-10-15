@@ -1,10 +1,36 @@
-header
+include ./logo/logo-data.pug
+
+header.header
   .container
     nav.site-nav
-      ul.site-nav__list
-        li.site-nav__item
-          a.site-nav__link(href=page === "index" ? false : "index.html") Главная
-        li.site-nav__item
-          a.site-nav__link(class=page ==="catalog" ? "site-nav__link--active": false href=page === "catalog" ? false : "catalog.html") Каталог
-        li.site-nav__item
-          a.site-nav__link(class=page ==="contacts" ? "site-nav__link--active": false href=page === "contacts" ? false : "contacts.html") Контакты
+      .site-nav__list
+        .site-nav__item.site-nav__item--logo
+          a.site-nav__link(href="index.html")
+            +image({
+              devMode: image_data.devMode,
+              mediaTablet: image_data.mediaQueries.tablet,
+              mediaDesktop: image_data.mediaQueries.desktop,
+              alt: image_data.image.alt,
+              mobileWidth: image_data.image.mobile.width,
+              mobileHeight: image_data.image.mobile.height,
+              mobileSrc: image_data.image.mobile.src,
+              mobileSrc2x: image_data.image.mobile.src2x,
+              mobileSrcWebp: image_data.image.mobile.srcWebp,
+              mobileSrc2xWebp: image_data.image.mobile.src2xWebp,
+              tabletWidth: image_data.image.tablet.width,
+              tabletHeight: image_data.image.tablet.height,
+              tabletSrc: image_data.image.tablet.src,
+              tabletSrc2x: image_data.image.tablet.src2x,
+              tabletSrcWebp: image_data.image.tablet.srcWebp,
+              tabletSrc2xWebp: image_data.image.tablet.src2xWebp,
+              desktopWidth: image_data.image.desktop.width,
+              desktopHeight: image_data.image.desktop.height,
+              desktopSrc: image_data.image.desktop.src,
+              desktopSrc2x: image_data.image.desktop.src2x,
+              desktopSrcWebp: image_data.image.desktop.srcWebp,
+              desktopSrc2xWebp: image_data.image.desktop.src2xWebp
+            })
+        .site-nav__item.site-nav__item--phone
+          a.site-nav__link(href="tel:897226216581") + (972) 2 – 621 – 6581
+        .site-nav__item.site-nav__item--button
+          a.site-nav__link.site-nav__link--button(href="#") заказать звонок

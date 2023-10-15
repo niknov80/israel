@@ -4,6 +4,7 @@ import {initVideo} from './modules/video';
 import {Form} from './modules/form-validate/form.js';
 import {sliderInit} from './modules/slider.js';
 import {isWebP} from './utils/webp.js';
+import {initAccordions} from './modules/accordion/init-accordion.js';
 
 // ---------------------------------
 
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initModals();
+
   });
 });
 
